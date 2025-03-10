@@ -85,7 +85,7 @@ const config: Config = {
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/TutoriatLFA/TutoriatLFA',
           label: 'GitHub',
           position: 'right',
         },
@@ -129,7 +129,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/TutoriatLFA/TutoriatLFA',
             },
           ],
         },
