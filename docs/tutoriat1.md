@@ -1,5 +1,5 @@
 
-# Tutoriat 1
+# DFA/NFA
 
 $$
 I = \int_0^{2\pi} \sin(x)\,dx

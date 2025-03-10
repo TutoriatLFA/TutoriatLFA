@@ -91,11 +91,11 @@ const config: Config = {
           label: 'Tutorial',
         },
         // { to: '/blog', label: 'Blog', position: 'left' },
-        {
-          href: 'https://github.com/TutoriatLFA/TutoriatLFA',
-          label: 'GitHub',
-          position: 'right',
-        },
+        // {
+        //   href: 'https://github.com/TutoriatLFA/TutoriatLFA',
+        //   label: 'GitHub',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {
@@ -113,38 +113,36 @@ const config: Config = {
         {
           title: 'Community',
           items: [
+            // {
+            //   label: 'Stack Overflow',
+            //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+            // },
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'Whatsapp',
+              href: 'https://tinyurl.com/tutoriatLFA-2025',
             },
           ],
         },
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/TutoriatLFA/TutoriatLFA',
-            },
+            /*     {
+                  label: 'Blog',
+                  to: '/blog',
+                }, */
+            /*             {
+                          label: 'GitHub',
+                          href: 'https://github.com/TutoriatLFA/TutoriatLFA',
+                        }, */
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Free for non-commercial use .`,
     },
     prism: {
+      // theme: prismThemes.github,
       theme: prismThemes.github,
+      // darkTheme: prismThemes.dracula,
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
