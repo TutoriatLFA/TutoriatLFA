@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Tutoriat LFA',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Materiale pentru cursul de LFA',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
