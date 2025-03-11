@@ -1,4 +1,4 @@
-# Website
+# [Website](https://fmi-limbaje-formale-si-automate.netlify.app/)
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
@@ -6,7 +6,7 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 ```
 $ yarn
-```
+``` 
 
 ### Local Development
 
