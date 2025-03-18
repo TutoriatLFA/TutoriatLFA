@@ -1,0 +1,68 @@
+Examen: Limbaje formale  si automate
+Semestrul II 13 iunie 2014,
+Universitatea din Bucure sti
+durata examenului: 2 ore
+Nume  si prenume: Varianta A
+Grupa:
+1. (10 puncte) S a se enunt e  si s a se demonstreze teorema lui Kleene despre limbaje regulate.
+1
+
+2. (10 puncte) S a se enunt e  si s a se demonstreze lema de pompare pentru limbajele independente
+de context.
+2
+
+Nume  si prenume: grupa:
+Spunet i dac a urm atoarele armat ii sunt adev arate sau nu, justicat i pe scurt r aspunsul.
+3. (5 puncte) Exist a o gramatic a regulat a Gastfel ^ nc^ at nu exist a nicio expresie regulat a Ecu
+proprietatea c a L(E) =L(G)?
+4. (5 puncte) Fie limbajele L1; L2cu proprietatea c a L1⊆L2 siL1∈REG . Avem a sadar c a
+L2∈REG ? Unde REG este familia limbajelor regulate (recunoscute de expresii regulate).
+5. (5 puncte) Este decidabil dac a limbajele acceptate de dou a expresii regulate sunt egale sau nu?
+6. (5 puncte) Exist a limbaje modelate de automate push-down deterministe care au toate cuvintele
+de lungime impar a  si nu pot  modelate de gramatici independente de context?
+3
+
+7. (10 puncte) a. Dat i un automat nit nedeterminist (NFA) care nu este −NFA  si nici DFA.
+Automatul trebuie sa aib a cel putin 4 stari accesibile din starea init ial a.
+b. Transformat i automatul de la punctul a. ^ ntr-o expresie regulat a ar at^ and pa sii
+succesivi de obt inere a expresiei regulate.
+8. (10 puncte) Spunet i dac a limbajul urm ator este sau nu regulat. Dac a limbajul este regulat
+construit i un automat nit determinist care s a ^ l accepte, dac a nu, demonstrat i folosind lema de
+pompare pentru REG c a limbajul nu este regulat L={akb3lal|k≥1; l≥0}.
+4
+
+Nume  si prenume: grupa:
+9. (10 puncte) Spunet i dac a limbajul urm ator este independent de context sau nu; dac a da,
+construit i o gramatic a independent a de context care sa ^ l genereze, dac a nu, demonstrat i folosind
+eventual lema de pompare c a limbajul nu este independent de context.
+L={aibjck|i+j̸=k} · {w|2|w|a= 3|w|b}
+10. (10 puncte) Construit i un automat pushdown (PDA), pentru limbajul
+L={anbn|n≥0} ∪ {anb3n|n≥0}:
+5
+
+11. (10 puncte) Spunet i dac a limbajul urm ator este independent de context sau nu; dac a da,
+construit i o gramatic a independent a de context care sa ^ l genereze, dac a nu, demonstrat i folosind
+eventual lema de pompare c a limbajul nu este independent de context.
+L={an+2bma2nb3n|m; n ≥0}:
+BONUS. (10 puncte) Se consider a limbajul L={a2n+1bm|n prim; m > 0}. Demonstrat i folosind
+eventual lema de pompare c a limbajul nu este independent de context.
+6
+
+BONUS. (10 puncte) Exist a L1∈CF−REG ,L2∈REG astfel ^ nc^ at L1⊆L2⊆ {a}?
+BONUS. (30 puncte) Not am cu DCF clasa limbajelor acceptate de automate push-down cu st ari
+nale  si cu SDCF clasa limbajelor acceptate de automate push-down deterministe cu stiv a vid a.
+Este adevarat c a DCF −SDCF =∅? Justicat i r aspunsul.
+7
+
+BONUS. (30 puncte) Fie L∈CF un limbaj independent de context  si wun cuv^ ant. Se poate
+decide dac a exist a un k≥1 astfel ^ nc^ at cuv^ antul wk∈L?
+8
+
+CIORN A: P1
+Nume  si prenume: grupa:
+9
+
+CIORN A: P2
+Nume  si prenume: grupa:
+10
+

@@ -1,0 +1,39 @@
+Examen „ Limbaje Formale ș i Automate”  
+23 iunie 2020  (seria 14 + seria 21 + restanțieri)  
+ 
+Nota de pornire:   3  
+Timp de lucru: 10 0 de m inute  
+ 
+Rezolvările se redactează cu pix/stilou (nu creion) pe foi albe care se numerotează .  
+Pe prima pagină sus trebuie să apară scrise:  
+- nota de pornire  
+- grupa  
+- numele și prenumele complet  al studentului.  
+Toate paginile cu rezolvări se pozează clar și se reunesc (ordonate și răsucite corect) într -un 
+singur fișier pdf numit de forma “X_Grupa_Nume_Prenume.pdf ”, unde X = nota de pornire.  
+ 
+ 
+Subiect 3A [2p]  
+Pentru limbajul regulat  𝐿𝐿={𝑎𝑎2𝑛𝑛𝑏𝑏3𝑐𝑐3𝑘𝑘+1 | 𝑛𝑛≥1,𝑘𝑘≥0} 
+ să se deseneze  un automat finit,  
+apoi să se verifice dacă acesta acceptă cuvântul 𝑤𝑤=𝑎𝑎4𝑏𝑏3𝑐𝑐4 
+ și să se scrie o gramatică regulată,  
+apoi să se verifice dacă aceasta generează cuvântul 𝑤𝑤=𝑎𝑎4𝑏𝑏3𝑐𝑐4. 
+ 
+Subiect 3K [2p]  
+Să se demonstreze că  limbajul 𝐿𝐿={𝑧𝑧∙𝑧𝑧𝑅𝑅∙𝑧𝑧 | 𝑧𝑧∈{𝑎𝑎,𝑏𝑏}∗ ; 𝑧𝑧𝑅𝑅 este oglinditul  lui 𝑧𝑧} nu este 
+independent de context, folosind lema de pompare pentru limbajele independente de 
+context.  
+ 
+Subiect 3D [2p]  
+Se dă următorul automat fin it nedeterminist cu lambda -tranziț ii: 
+ 
+Să se obțină  un automat finit determinist echivalent cu cel dat.  
+ 
+Subiect 3F [1p]  
+Se dă următoarea expresie regulată : (𝑒𝑒1+𝑒𝑒2)∙(𝑒𝑒3)∗, unde  
+𝑒𝑒1=𝑎𝑎∗∙𝑏𝑏𝑏𝑏,          𝑒𝑒2=𝑐𝑐∙(𝑑𝑑𝑑𝑑)∗∙𝑒𝑒,          𝑒𝑒3=𝑎𝑎𝑎𝑎∙(𝑏𝑏+𝑐𝑐𝑐𝑐𝑐𝑐). 
+Să se obțină un a utomat finit care acceptă acelaș i limbaj ca cel descris de expresia dată . 
+  
+
+
