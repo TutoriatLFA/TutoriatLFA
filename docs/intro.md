@@ -12,6 +12,9 @@ sidebar_position: 1
 
 ### [**Introduction to Automata Theory, Languages, and Computation by John Hopcroft and Jeffrey Ullman**](https://dpvipracollege.ac.in/wp-content/uploads/2023/01/John-E.-Hopcroft-Rajeev-Motwani-Jeffrey-D.-Ullman-Introduction-to-Automata-Theory-Languages-and-Computations-Prentice-Hall-2006.pdf)
 
+### [**Introduction to the Theory of Computation by Michael Sipser, Third Edition**](https://cs.brown.edu/courses/csci1810/fall-2023/resources/ch2_readings/Sipser_Introduction.to.the.Theory.of.Computation.3E.pdf)
+
+
 ## Rădăcinile Istorice și Revoluția Conceptuală
 
 La începutul secolului XX, un grup de cercetători vizionari a deschis drumul către înțelegerea abstractă a proceselor de calcul și a limbajului. Printre acești pionieri se numără:
