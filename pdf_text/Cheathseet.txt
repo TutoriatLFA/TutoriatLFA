@@ -1,0 +1,230 @@
+1. Ierarhia Chomsky: clasificare, definitii  
+Def:  O gramatica G = (N , T, S, P) se nume ste: 
+de tipul 1 ->  dependent a de context (context sensitive), dac a fiecare  productie u → v  a sa satisface conditia    
+|u| ≤ |v|, u contine cel putin un netermin al 
+de tipul 2 ->  independenta de context (context free), daca fiecare productie u → v  a sa satisface conditia         
+|u| = 1, v ≠ λ  
+de tipul 3 ->  regulata, daca fiecare productie u → v a sa satisface conditia |u| = 1, v є T* ∪ T*N, v ≠ λ 
+Orice gramatica e de tipul 0.  Orice gramatic a de tipul i este si de tipul i -1, unde i=3,2,1.  
+Familia limbajelor generate de gramatici de tipul i (i=0,1,2,3) se noteaza  cu Li (i=0,1,2,3). L3 ⊆ L2 ⊆ L1 ⊆ L0. 
+ 
+Def:  Doua gramatici G1 si G 2 sunt echivalente daca ele genereaza acelasi limbaj si sunt de acelasi tip.  
+Lema:  Fie G=(N,T,S,P) o gramatica de tipul i (i=3,2,1). Exista o gramatica G 1 echivalenta cu G  a.i. simbolul initial S 1 
+al lui G 1 sa nu apar a in nici unul din cuvintele aflate in membrul al doilea al productiilor gramaticii  G1. 
+ 
+Def:  O gramatica G=(N,T,S,P) se nume ste recursiva  daca pentru  orice cuvant w є T+ exista un algoritm pentru a 
+decide daca w є L(G) sau nu.  (se noteaza T+ = T* - {λ}) 
+Teorema: Gramaticile dependente de context sunt recursive . 
+Demonstratie:  Fie G = (N,T,S,P) o gramatica de tipul 1 si w є T*. Notam n = |w|  si definim recursiv multimile:  
+ U0 = {S}  
+ Um+1 = U m ∪ { v | v є (N ∪ T)+ , ∃u є Um a.i. u⇒v si |v| ≤ n } 
+Parcurgem arborele pornind de la S pana cand nu se mai gasesc cuvinte derivate cu lungimea mai mica de n.  
+ 
+2. Eliminarea redenumirilor  
+Def: O productie de forma X → Y , X si Y neterminale, se nume ste redenumire . 
+Propozitie:  Fie G=(N,T,S,P) o gramatica de tipul 2 sau 3 , exista o  gramatic a G 1 echivalenta cu G si fara redenumiri.  
+Demonstratie:  Fie G=(N,T,S,P) o gramatica de tipul 2 sau 3.  
+Fie  P1 = { A → u | u !є N, A → u є P }  si 
+P2 = { A → u | A є N, ∃B є N a.i. A ⇒G B, B → u є P1 } 
+Product iile din P 2 nu sunt redenumiri. Fie P ’ = P ∪ P2. Gramatica G 1 = (N, T, S, P’) este f ara redenumiri si se arat a 
+usor ca este echivalenta cu G.  G1~G <=> L(G1) = L(G) 
+Exemplu : Fie G=({S,A ,B}, {a,b,c}, S, P) unde P:   
+S → A |aS | a 
+A → B |b A | b 
+B → cB | c  
+S → A si A → B sunt redenumiri. ∃G1 echivalenta cu G care sa nu contina aceste productii.  
+Fiindca A → B inseamna ca A → cB si A → c trebuie sa adaugam aceste productii pentru a pastra echivalenta.  
+ 
+Gramatica echivalenta G1=({S,A ,B}, {a,b,c}, S, P1) fara redenumiri va avea P 1:   
+S → aS | a |bA | b | cB | c  
+A → bA | b | cB | c  
+B → cB | c  
+ 
+3. Gramatici regulate  
+Def: O gramatica G = (N, T, S, P) unde  
+ N este  multimea neterminalelor, o multime nevida finita  
+ T este   multimea terinalelor, o multime nevida finita  
+ S є N este  simbolul de start  
+ P = { u → v | u,v є (N ∪ T)* si u contine cel putin un neterminal} este multimea productiilor  
+este o gramatica regulata sau de tipul 3 daca  fiecare productie u → v a sa satisface conditiile:  |u| = 1,   v є T* ∪ T*N,  
+v ≠ λ . 
++ 
+
+ 
+4. Forma normala  (canonica)  a unei gramatici regulate  
+Def Bris:  O gramatica  regulata  este in forma normala daca productiile sale au forma  
+A→aB sau A→a, unde A,B є N si a є T.  
+Propozitie:  Pentru orice gramatic a regulat a G=(N,T,S,P) exist a o gramatica G 1 = (N 1, T, S, P1) echivalent a cu ea si 
+avand proprietatea  ca fiecare  producatie u → v є P1 a sa satisface conditiile u є N1; v є T ∪ TN1.  
+Aducerea la forma normala :  
+   - Pentru fiecare productie de forma A →a1a2...ak  cu k>1 si a i є T, adaugam in N 1 neterminalele: A 1, A2,..., Ak-1 si in P 1 
+productiile: A →a1A1, A1→a2A2,.....,  Ak-1→ak  
+   - Pentru fiecare productie de forma A →a1a2...akB  cu k>1, a i є T, B є N, adaugam in N 1 neterminalele: A 1, A2,..., Ak-1 
+si in P 1 productiile: A →a1A1, A1→a2A2,.....,  Ak-1→akB 
+ 
+G1 rezultat va fi in forma normala si va avea acelea si terminale ca si G, neterminalele vor fi cele  vechi la care le 
+adaugam pe cele nou introduse , simbolul de start va fi acela si, iar productiile vor fi cele pe care le -am introdus 
+conform  procedurilor de mai sus.  
+ 
+Exemplu : Fie G=({S,A ,B}, {a,b,c}, S, {S →a     , S →a   A , A→aB,B→b})  
+Productiile A→aB si B→b respecta regula  si deci le adaugam in lista productiilor lui G 1. 
+Pentru productia S →a      adaugam neterminalele X si Y si productiile :  S →a   ,    →    ,    →   
+Pentru productia S →a   A  adaugam neterminalul Z si productiile :       S →a   ,    →  A  
+=>G 1 = ({S,A,B,X,Y,Z}, {a,b,c}, S, {  S →a   ,   →    ,   →  , S →a   ,   →  A , A→aB,B→b}) 
+ 
+5. Automate cu stari finite  (definitii, limbaje acceptate)  
+Def:  Se numeste Automat Finit Determinist  (AFD)  un quintuplu ( ∑, Q, q0, δ, F), unde:  
+ -  ∑ este un alfabet numit alfabetul de intrare  
+ -  Q este o multime finita nevida numita multimea starilor interne  
+ -  q0 є Q este starea init iala a automatului  
+ -  δ : Q × ∑ → Q se numeste functia de tranzitie a automatului   
+     (egaliltatea   δ(q,a)  = r  exprima trecerea automatului din starea q in starea r atunci cand citeste simbolul de intrare a) 
+ -  F ⊆ Q este mult imea starilor fi nale ale automatului  
+Def: Se extinde  δ la δ  : Q × ∑* → Q care este definita astfel:        
+●  δ (q, λ) = λ 
+●  δ (q, wx) = δ(δ (q, w), x), pentru orice w  є ∑*, orice  x є ∑  si orice  q є Q  
+Def:  Fie A = (∑, Q, q0, δ, F) un AFD. Limbajul acceptat  de automatul  A este:   L(A) = { w | w є ∑*, δ(q0,w) є F } 
+Lema : Fie A un AFD. Fiind data starea δ(q,w) = s ,  cu w ≠λ, w = w1w2...wn, wi є ∑, i = 1 ,2,...n,  exista starile                 
+q1, q2, ...qn+1  a.i.  q1 = q, qn+1 = s, qi+1 = δ(qi,wi), i = 1 , 2, ..., n. 
+Lema : Fie A un AFD. Fiind date starile q 1, q2, ...qn+1  a.i.  qi+1 = δ(qi,wi), i = 1 , 2, ..., n,  atunci q n+1 = δ (q1,w), cu            
+w = w1w2...wn,  wi є ∑,  i = 1 ,2,...n. 
+ 
+Def:  Un Automat Finit Nedeterminist  (AFN)  este este un quintuplu (∑, Q, Q0, δ, F), unde:  
+ -  ∑ este un alfabet numit alfabetul de intrare  
+ -  Q este o multime finita nevida numita multimea starilor interne  
+ -  Q0 ⊆ Q este o multime nevida, numit a multimea starilor init iale ale  automatului  
+ -  δ : Q × ∑ → 2Q se nume ste functia de tranzitie a automatului  
+ -  F ⊆ Q este multimea starilor finale ale automatului  
+Def:  Fie A = (∑, Q, Q0, δ, F) un AFN. Limbajul acceptat  de A  este format din toate cuvintele w = w 1w2...wn                 
+(wi є ∑, i = 1 , 2, ..., n) pentru care exist a q 1, q2, ..., qn+1 cu q 1 є Q0, qn+1 є F si q i+1 є δ(qi;wi), i=1,2,...,n,  adica  
+ L(A) = { w | w є ∑*, δ(q0, w) ∩ F ≠ Ø } 
+
+ 
+ 
+Este evident ca orice AFD poate fi privit ca un AFN, prin urmare avem  urmatoare le teoreme : 
+Teorema:  Limbajul reprezentabil intr -un AFD este reprezentabil intr -un AFN. 
+Teorema:  Limbajul reprezentabil intr -un AFN este reprezentabil intr -un AFD.  
+Demonstratie:  Fie L un limbaj reprezentat in AFN -ul A =  (∑, Q, Q0, δ, F). Consider am AFD A 1 = (∑, 2Q, Q0, δ1, F1), 
+unde functia de  tranzit ie este definit a astfel:  
+ δ1(P, a) = Ø, daca P = Ø 
+ δ1(P, a) = UqєP δ(q, a), da a P ≠ Ø,  
+iar mult imea starilor finale este: F 1 = { S | S ⊆ Q, S ∩ F  ≠ Ø }. 
+Diferente:  
+- AFD are o singura stare initiala q 0  , AFN are o multime nevida de stari initiale Q 0 
+- fun tia δ:  ●  δ AFN: Q × ∑ → 2Q 
+AFN a  epta tranzitii  u λ , adi a poate exista δ(q, λ)=q 1  
+AFN accepta mai multe tranzitii dintr -o stare q cu un caracter a, adica poate exista       
+δ(q,a) =q1  si δ(q,a) =q2 
+●  δ AFD: Q × ∑ → Q  
+AFD accepta o singura tranzitie din tr-o stare  q cu un caracter  a, adica |δAFD (q,a)|=1    
+ori are q є Q si ori are a є ∑  
+ 
+Notatii:  Stare initiala    Tranziti a δ(q 1, a) = q 2   Stare finala  
+ 
+ 
+ 
+Exemplu : Se da limbajul L(A)={ ak b | k > 0 } . Sa se scrie AFD A.  //ak  inseamna a scris de k ori: a1 = a, a3 = aaa  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+6. Stari accesibile  ale unui AFD  
+Def: Mult imea st arilor accesibile ale unui AFD A = (∑, Q, q0, δ, F) este mult imea  
+Qa = { q | q є Q, ∃w є ∑* a.i. δ(q0,w) = q  } 
+Cu alte cuvinte, starile accesibile ale unui automat sunt acele st ari in care se poate ajunge pornind din starea 
+initiala si primind la intrare un cuvant  oarecare w.  
+Starile accesibile pot fi calculate cu urmatorul algoritm:  
+ U0 = {q0} 
+ Um+1 = Um  ∪ { q | q є Q, ∃a є ∑ si ∃s є Um, a.i. δ(s, a) = q  } 
+Cel mai mic i є N pentru care U i = U i+1 ne permite determinarea st arilor  accesibile: Q a = U i. 
+Acelasi algoritm dar scris de Dragulici:  
+p1. U0 = {q0}; i := 0  
+p2. Ui+1 = U i  ∪ { δ(q,a) | q є U i, a є ∑}  
+p3. if Ui+1 = U i  then Qa = U i ; stop;  
+else i = i+1; go to p2.  
+1 
+ 2 
+ 0 
+a 
+ b 
+a 
+A = (∑, Q, Q 0, δ, F)  unde:  
+    ∑ = {a, b} ,   
+    Q = {0,1,2} ,          q0 = 0,   F = {2}  
+    δ(0, a) = 1,  
+    δ(1, a) = 1,  
+    δ(1, b) = 2  
+q0 
+ qF 
+ q1 
+ q2 
+a 
+
+ 
+7. Echivalenta dintre automate cu stari finite si gramatici regulate  
+Pentru o gramatica regulata G exista un automat A astfel ca L(A) = L(G): 
+G=(N, T, S, P) A=(∑, Q, q 0, δ, F)  
+T ∑ = T  
+N Q = N ∪ {qF}, F = {q F} 
+S q0 = S 
+P: S→aA δ(q 0, a) = q A 
+P: A→b δ(q A, b) = q F 
+daca S→λ F = {q F} ∪ S 
+i) data o gramatica regulata, sa se construiasca un AFN echivalent  (se accepta si un AFD)  
+Exemplu : Fie o gramatica G=(N, T, S, P), unde N = {S,A}  
+    T = {a,b}  
+    P = {  S→aA, A→aA, A→b } 
+=> AFD echivalent A = (∑, Q, q 0, δ, F)  unde   ∑ = T  = {a,b}  
+       Q = N ∪ {qF} = {q S,qA,qF} //am folosit notatia S = q S  si A = q A 
+ F  = {q F} 
+q0 = q S 
+δ : δ(q S, a) = q A, δ(q A, a) = q A, δ(q A, b) = q F 
+ 
+ 
+ 
+qA 
+ qF 
+ qS 
+a 
+ b 
+a 
+
+
+ 
+8. Aducerea la Forma normala Chomsky (FNC) a unei gramatici de tip 2   
+Def Bris:  O gramatica este in forma normala Chomsky daca productiile sale au forma  
+A→BC sau A→a, unde A,B,C є N si a є T.  
+Exemplu : Fie G=({S, Z}, {a,c,z}, S, {S→aaZccc , Z→z})  
+Productia Z →z respecta regula si deci o adaugam in lista productiilor lui G 1. 
+Pentru fiecare terminal ramas se creeaza un neterminal si o productie: A 1→a, C 1→c 
+Pentru productia S→a a         se  reeaza neter ina e si produ tii pentru a ipirea ter ina e or:  
+pentru  a a  vom avea A 2→A1A1 
+pentru        vo  avea C2→C1C1 
+pentru        vo  avea C3→C1C2 (sau C 3→C2C1) 
+iar apoi se creeaza ce neterminale si productii mai sunt necesare pentru a forma o productie echivalenta:  
+pentru  a a   vo  avea Z1→A2Z 
+pentru  a a          vom avea S→Z1C3 
+=> G1 = ({S,  Z, A1, A2, C1, C2, C3, Z1}, {a,  c, z}, S, {  S→Z1C3, Z1→A2Z, A2→A1A1, A1→a, C3→C1C2, C2→C1C1, C1→c, Z→z}) 
+ 
+9. Algoritmul CYK   (pentru gramatici de tipul 2)  
+i) Folosing algoritumului CYK dem. ca  un cuvant este sau nu gen erat de o gramatica independenta  de context  
+program de rezolvare :  https://www.xarg.org/tools/cyk -algorithm  
+ii) sa se genereze derivare unui cuvant cu ajutorul algoritmului CYK  
+Exemplu : Fie o gramatica cu p roductiile : {S→AB, A→DC, B→b, C→c, D→d } 
+Derivarea cuvantului dcb este:  S →1 AB →2 DCB →5 dCB →4 dcB →3 dcb 
+ 
+10. Gramatici de tip LL(1)   (pentru gramatici de tipul 2)  
+Explicatii:  part1: https://www.youtube.com/watch?v=I8hOEeSmY5E  
+  part2: https://www.youtube.com/watch?v=BFFkYhb6Hmc  
+ 
+A->a|b.    You can check if a grammar of LL(1) or not by u sing following two expressions:  
+if ( first (a) ∩ first (b)  != null ) =>  not LL(1)  
+if ( first (a) ∩ first (b)  == null) 
+if ( λ  є first (a)  OR follow (A) ∩ first (b)  == null ) => LL(1).  
+ 
+alte surse de inspiratie  pentru  teorie  in general : https://staff.fmi.uvt.ro/~mircea.dragan/docs/Limbaje2.pdf   
+
+

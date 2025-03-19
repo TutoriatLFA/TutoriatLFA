@@ -1,0 +1,42 @@
+Examen „ Limbaje Formale ș i Automate”  
+23 iunie 2020  (seria 14 + seria 21 + rest anțieri)  
+ 
+Nota de pornire:   4  
+Timp de lucru: 10 0 de minute  
+ 
+Rezolvările se redactează cu pix/stilou (nu creion) pe foi albe care se numerotează .  
+Pe prima pagină sus trebuie să apară scrise:  
+- nota de pornire  
+- grupa  
+- numele și prenumele complet  al stude ntului.  
+Toate paginile cu rezolvări se pozează clar și se reunesc (ordonate și răsucite corect) într- un 
+singur fișier pdf numit de forma “X_Grupa_Nume_Prenume.pdf ”, unde X = nota de pornire.  
+ 
+ 
+Subiect 4B [2p]  
+Pentru limbajul independent de context  
+𝐿𝐿={𝑎𝑎3𝑛𝑛𝑏𝑏𝑚𝑚𝑐𝑐𝑘𝑘+2𝑑𝑑2𝑘𝑘𝑒𝑒𝑛𝑛+1 | 𝑛𝑛≥1,𝑚𝑚≥0,𝑘𝑘≥1} 
+ să se deseneze  un a utomat push- down,  
+apoi să se verifice dacă acesta acceptă cuvântul 𝑤𝑤=𝑎𝑎3𝑐𝑐3𝑑𝑑2𝑒𝑒2 
+ și să se scrie o gramatică independentă de context,  
+apoi să se verifice dacă ac easta generează cuvântul  𝑤𝑤=𝑎𝑎3𝑐𝑐3𝑑𝑑2𝑒𝑒2. 
+ 
+Subiect 4J [1p]  
+Să se demonstreze că limbajul 𝐿𝐿={𝑎𝑎𝑛𝑛𝑏𝑏𝑘𝑘 | 0<𝑛𝑛<𝑘𝑘} nu este regulat,  
+folosind lema de pompare pentru limbajele regulate.  
+ 
+Subiect 4D [ 2p] 
+Se dă următorul automat fin it nedetermi nist cu lambda -tranziț ii: 
+ 
+Să se obțină  un automat finit determinist echivalent cu cel dat.  
+ 
+Subiect 4H [1p]  
+Se dă următoarea gramatică independentă de context:  
+𝑆𝑆→𝐴𝐴𝐴𝐴𝐴𝐴   
+𝐴𝐴→𝑎𝑎𝐴𝐴 | 𝜆𝜆
+𝐴𝐴→𝑏𝑏𝐴𝐴 | 𝜆𝜆 
+Să se simplifice gramatica (să se obțină o gramatică independentă de context echivalentă, 
+fără simboluri nefolositoare, fără λ-producții, fără  redenumiri).  
+  
+
+
