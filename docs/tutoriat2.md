@@ -7,7 +7,7 @@
 
 ---
 
-## A. Transformarea AFN → AFD (50 minute)
+## A. Transformarea AFN → AFD 
 
 ### Pas 1: Algoritmul Subseturilor
 
@@ -102,7 +102,7 @@ Construiți un AFN cu trei stări și transformați-l în AFD, evidențiind care
 
 ---
 
-## B. Verificarea Acceptării Cuvintelor (30 minute)
+## B. Verificarea Acceptării Cuvintelor 
 
 ### Pas 1: Procesul de Acceptare în AFD
 
@@ -150,7 +150,7 @@ Scrieți un cuvânt de lungime minimă care este respins de AFD-ul de mai sus ș
 **Exercițiu 3:**
 Propuneți un AFD care acceptă doar cuvintele care conțin cel puțin două litere consecutive identice și justificați de ce alte cuvinte sunt respinse.
 
-## C. Lucrul cu λ-Tranziții (40 minute)
+## C. Lucrul cu λ-Tranziții 
 
 ### Pas 1: λ-Închideri
 
