@@ -1,9 +1,9 @@
 # Transformări de Automate și Verificarea Acceptării
 
 ## Cuprins
-- [A. Transformarea AFN → AFD](#a-transformarea-afn--afd-50-minute)
-- [B. Verificarea Acceptării Cuvintelor](#b-verificarea-acceptării-cuvintelor-30-minute)
-- [C. Lucrul cu λ-Tranziții](#c-lucrul-cu-λ-tranziții-40-minute)
+- [A. Transformarea AFN → AFN](#a-transformarea-afn--afd)
+- [B. Verificarea Acceptării Cuvintelor](#b-verificarea-acceptării-cuvintelor)
+- [C. Lucrul cu λ-Tranziții](#c-lucrul-cu-λ-tranziții)
 
 ---
 
