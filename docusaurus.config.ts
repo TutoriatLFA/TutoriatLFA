@@ -9,7 +9,8 @@ import rehypeKatex from "rehype-katex";
 const config: Config = {
   title: "Tutoriat LFA",
   tagline: "Materiale pentru cursul de LFA",
-  favicon: "img/favicon.ico",
+  // favicon: "img/favicon.ico",
+  favicon: "img/thumbnail.png",
 
   // Set the production url of your site here
   // url: 'https://TutoriatLFA.github.io',
@@ -85,7 +86,9 @@ const config: Config = {
       title: "Tutoriat LFA",
       logo: {
         alt: "My Site Logo",
-        src: "img/logo.svg",
+        // src: "img/logo.svg",
+        src: "img/thumbnail.png",
+        srcDark: "img/logo_dark.png",
       },
       items: [
         {
