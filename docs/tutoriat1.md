@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # DFA/NFA
 
 ## Exerciții cu Automate Finite Deterministe (DFA)
@@ -22,8 +26,6 @@
 
 1. Construiți un DFA care acceptă cuvinte care **se termină cu** `1`.
 2. Proiectați un DFA care recunoaște cuvinte cu **sufixul** `11`.
-
-![DFA pentru sufixul `11`](/img/assets/dfa_11.png)
 
 ---
 
