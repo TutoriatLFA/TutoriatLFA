@@ -47,6 +47,10 @@ $$
 
 ![Caz iv automaton](../static/img/tutoriat6/caz3.png)
 
+## Transformarea AFN-λ → RegEx 
+
+![AFN-λ → RegEx](../static/img/tutoriat6/caz4.png)
+
 ## Exerciții
 
 1. Folosind algoritmul de la curs/seminar, transformați următorul automat finit într-o expresie regulată echivalentă (faceți și desenele și pentru pașii intermediari).
@@ -71,4 +75,5 @@ aba^*aba(ba)^*a
 $$
 
 Să se obțină un automat finit care acceptă același limbaj ca cel descris de expresia dată.
+
 
