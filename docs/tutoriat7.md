@@ -2,7 +2,7 @@
 sidebar_position: 8 
 ---
 
-# PDA
+# PDA / Gramatici
 
 ## Exemplu PDA $L = \set{a^n b^n | n \geq 0}$
 
