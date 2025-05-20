@@ -70,4 +70,6 @@ Din relațiile 1–5 (am obținut contradicții pentru toate cele 5 cazuri de de
 
 4. Spuneți dacă limbajul următor este independent de context sau nu; dacă da, construiți o gramatică independentă de context care să îl genereze, dacă nu, demonstrați folosind eventual lema de pompare că limbajul nu este independent de context.
    $L = \{ a^{2k} b^{3k} c^{5k} \mid k \geq 1 \}$.
-   
+
+5. Spuneți dacă limbajul următor este independent de context sau nu; dacă da, construiți o gramatică independentă de context care să îl genereze, dacă nu, demonstrați folosind eventual lema de pompare că limbajul nu este independent de context.
+   $L = \{ a^{2k} b^{3k} c^{5k'} \mid k, k' \geq 2 \}$.
